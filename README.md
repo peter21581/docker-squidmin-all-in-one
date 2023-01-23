@@ -5,7 +5,8 @@
 - docker
 - docker-compose
 
-# Ubuntu 22.04 LTS Install
+## Ubuntu 22.04 LTS Install
+```
 apt update
 apt upgrade -y
 apt install apt-transport-https ca-certificates curl software-properties-common wget vim nano make cmake -y
@@ -16,6 +17,7 @@ apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin dock
 systemctl status docker
 docker --version
 docker-compose --version
+```
 
 ## Setup
 ```
