@@ -9,7 +9,7 @@
 ```
 apt update
 apt upgrade -y
-apt install apt-transport-https ca-certificates curl software-properties-common wget vim nano make cmake -y
+apt install apt-transport-https ca-certificates curl software-properties-common wget vim nano make cmake git -y
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
 add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
 apt-cache policy docker-ce
@@ -28,3 +28,8 @@ git clone https://github.com/peter21581/squid-db-auth-ip infra/docker/squid/exte
 make init
 make fresh
 ```
+
+## Modifiled
+- Dockers IP range: 172.19.0.0/24
+- MySQL IP: 172.19.0.5 (Only local)
+- Squid Proxy Port: 443
